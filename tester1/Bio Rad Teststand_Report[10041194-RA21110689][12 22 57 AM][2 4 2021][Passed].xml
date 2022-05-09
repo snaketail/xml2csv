@@ -1,0 +1,3157 @@
+<?xml version="1.0" encoding="gb2312" ?><?xml-stylesheet type="text/xsl" href="C:\Program Files\National Instruments\TestStand 2012\Components\Models\TestStandModels\ATML\StyleSheets\tr5_horizontal.xsl"?>
+
+<trc:TestResultsCollection xmlns:trc="urn:IEEE-1636.1:2011:01:TestResultsCollection" xmlns:tr="urn:IEEE-1636.1:2011:01:TestResults" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ts="www.ni.com/TestStand/ATMLTestResults/2.0">
+<trc:TestResults uuid="6495e0e0-c32e-4a72-8837-4613d27ba6b1" xmlns:trc="urn:IEEE-1636.1:2011:01:TestResultsCollection" xmlns:tr="urn:IEEE-1636.1:2011:01:TestResults" xmlns:c="urn:IEEE-1671:2010:Common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ts="www.ni.com/TestStand/ATMLTestResults/2.0">
+	<tr:Personnel>
+		<tr:SystemOperator ID = "administrator" name = "administrator"/>
+	</tr:Personnel>
+	<tr:ResultSet ID="321" name = "C:\Bio Rad TestStand_10041194\Main\Bio Rad Teststand.seq#MainSequence" startDateTime = "2021-04-02T00:22:57.765" endDateTime = "2021-04-02T00:31:07.620">
+		<tr:Extension>
+			<ts:TSStepProperties>
+				<ts:StepType>SequenceCall</ts:StepType>
+				<ts:StepGroup>Main</ts:StepGroup>
+				<ts:BlockLevel value='1'/>
+				<ts:Index value='9'/>
+				<ts:TotalTime value='489.855'/>
+				<ts:ModuleTime value='489.855'/>
+			</ts:TSStepProperties>
+		</tr:Extension>
+		<tr:Outcome value="Passed" />
+		<tr:SessionAction ID = "322" name = "Load Bio Rad DLL" startDateTime = "2021-04-02T00:22:57.802"  endDateTime = "2021-04-02T00:22:57.803"  testReferenceID="ID#:vjT50USnYkW0sYJ60awv0D">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Setup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='0.0008779'/>
+					<ts:ModuleTime value='0.0008779'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "323" name = "Put UUT" startDateTime = "2021-04-02T00:22:57.818"  endDateTime = "2021-04-02T00:22:59.351"  testReferenceID="ID#:pCsUDaEDBUWb+mCAymOY1A">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='1.53266'/>
+					<ts:ModuleTime value='1.53266'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:SessionAction ID = "324" name = "DC Power On" startDateTime = "2021-04-02T00:22:59.356"  endDateTime = "2021-04-02T00:22:59.749"  testReferenceID="ID#:f7l0w4KeGUuAgAdvy4llyA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='0.392269'/>
+					<ts:ModuleTime value='0.392269'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "325" name = "AC Power On" startDateTime = "2021-04-02T00:22:59.750"  endDateTime = "2021-04-02T00:23:00.040"  testReferenceID="ID#:GzbbZRerW0KsOfSjLH45uD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='2'/>
+					<ts:TotalTime value='0.289722'/>
+					<ts:ModuleTime value='0.289722'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "326" name = "Find Attached Devices" startDateTime = "2021-04-02T00:23:00.050"  endDateTime = "2021-04-02T00:23:16.429"  testReferenceID="ID#:3/5kcZbtdEezckeONT1yKB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>StringValueTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='4'/>
+					<ts:TotalTime value='16.3793'/>
+					<ts:ModuleTime value='16.3793'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr238D0402T0135Z600" name = "String">
+				<tr:TestData>
+					<c:Datum xsi:type="ts:TS_string" flags = "0x2400">
+						<c:Value>Success</c:Value>
+					</c:Datum>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:Expected comparator = "EQ">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>Success</c:Value>
+							</c:Datum>
+						</c:Expected>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "327" name = "12.8V No Load Test" startDateTime = "2021-04-02T00:23:16.441"  endDateTime = "2021-04-02T00:23:17.727"  testReferenceID="ID#:s2EHM1jn9kGPV9WF3jYYlD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='6'/>
+					<ts:TotalTime value='1.28629'/>
+					<ts:ModuleTime value='1.28629'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr239D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "12.7677645" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "12.16" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "13.44" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "328" name = "12.8V Load 30W" startDateTime = "2021-04-02T00:23:17.733"  endDateTime = "2021-04-02T00:23:19.309"  testReferenceID="ID#:/PEXBGfFnUy0sBWfu6GovA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='7'/>
+					<ts:TotalTime value='1.5754'/>
+					<ts:ModuleTime value='1.5754'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr240D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "12.6187008" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "12.16" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "13.44" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "329" name = "5V No Load Test" startDateTime = "2021-04-02T00:23:19.321"  endDateTime = "2021-04-02T00:23:20.061"  testReferenceID="ID#:uT9QBRM1n0S0ZJX7F9++eA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='9'/>
+					<ts:TotalTime value='0.740201'/>
+					<ts:ModuleTime value='0.740201'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr241D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "5.10332193" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "4.75" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "5.25" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "330" name = "5V 600mA Load" startDateTime = "2021-04-02T00:23:20.066"  endDateTime = "2021-04-02T00:23:21.309"  testReferenceID="ID#:hK5y13WF/UOw/cQ9FI1UED">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='10'/>
+					<ts:TotalTime value='1.24244'/>
+					<ts:ModuleTime value='1.24244'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr242D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "5.08506275" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "4.75" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "5.25" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "331" name = "3.3V Voltage Check" startDateTime = "2021-04-02T00:23:21.321"  endDateTime = "2021-04-02T00:23:22.111"  testReferenceID="ID#:dBBvwB2wHES0ifCY7PD/0B">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='12'/>
+					<ts:TotalTime value='0.789823'/>
+					<ts:ModuleTime value='0.789823'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr243D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "3.32870587" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "2.85" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "3.45" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "332" name = "Battery Voltage Check" startDateTime = "2021-04-02T00:23:22.121"  endDateTime = "2021-04-02T00:23:22.854"  testReferenceID="ID#:9ZyDVNqHmE+lSY/ulKlYSC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='14'/>
+					<ts:TotalTime value='0.732891'/>
+					<ts:ModuleTime value='0.732891'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr244D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "3.21079409" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "2.85" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "3.45" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "333" name = "Wait 10" startDateTime = "2021-04-02T00:23:22.859"  endDateTime = "2021-04-02T00:23:32.860"  testReferenceID="ID#:731Py5h0n0O4z4TxEZWZlC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Wait</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='15'/>
+					<ts:TotalTime value='10.0005'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "334" name = "Remote Command Set" startDateTime = "2021-04-02T00:23:32.863"  endDateTime = "2021-04-02T00:24:34.467"  testReferenceID="ID#:rwMhfIhvkEGEPElh2WthJB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='16'/>
+					<ts:TotalTime value='61.6038'/>
+					<ts:ModuleTime value='61.6038'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "335" name = "Initialize SRAM and HC12" startDateTime = "2021-04-02T00:24:34.473"  endDateTime = "2021-04-02T00:24:43.969"  testReferenceID="ID#:2mvB+Nka+EKbhUY+CDsGaC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='17'/>
+					<ts:TotalTime value='9.49522'/>
+					<ts:ModuleTime value='9.49522'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "336" name = "I2C Read Write Test" startDateTime = "2021-04-02T00:24:43.979"  endDateTime = "2021-04-02T00:24:46.932"  testReferenceID="ID#:fJAamqcq2k20eyHGphq6yD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='19'/>
+					<ts:TotalTime value='2.95214'/>
+					<ts:ModuleTime value='2.95214'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr245D0402T0135Z600" name = "Alpha VCC">
+				<tr:TestData>
+					<c:Datum value = "5.103680021" xsi:type="ts:TS_double" flags = "0x2000"/>
+				</tr:TestData>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "337" name = "Get VCC Sensor Value" startDateTime = "2021-04-02T00:24:46.937"  endDateTime = "2021-04-02T00:24:46.950"  testReferenceID="ID#:lLtihA257EqchQIoLTc4cD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='20'/>
+					<ts:TotalTime value='0.0126315'/>
+					<ts:ModuleTime value='0.0126315'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr246D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "4.99224" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "4.75" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "5.25" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "338" name = "Get 15V Sensor Value" startDateTime = "2021-04-02T00:24:46.955"  endDateTime = "2021-04-02T00:24:46.967"  testReferenceID="ID#:OXQvCycUQEO2wsMJkgzwsB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='21'/>
+					<ts:TotalTime value='0.0122736'/>
+					<ts:ModuleTime value='0.0122736'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr247D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "12.96864" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "12.16" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "13.44" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "339" name = "Get Power Sensor Value" startDateTime = "2021-04-02T00:24:46.972"  endDateTime = "2021-04-02T00:24:46.984"  testReferenceID="ID#:tq6ATEHbkk+HI/3GbKMbtB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='22'/>
+					<ts:TotalTime value='0.0123835'/>
+					<ts:ModuleTime value='0.0123835'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr248D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "39.2368" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "38" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "42" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "340" name = "Lid Left Sensor Test" startDateTime = "2021-04-02T00:24:46.989"  endDateTime = "2021-04-02T00:24:47.002"  testReferenceID="ID#:mtZOusQhZ0aR9DOvVCf06B">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='23'/>
+					<ts:TotalTime value='0.0123773'/>
+					<ts:ModuleTime value='0.0123773'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr249D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "52.9" xsi:type="ts:TS_double" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum value = "50.179" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum value = "55.456" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "341" name = "Lid Right Sensor Test" startDateTime = "2021-04-02T00:24:47.007"  endDateTime = "2021-04-02T00:24:47.019"  testReferenceID="ID#:DJXkLSdTrEC0jp7Z2uRpTB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='24'/>
+					<ts:TotalTime value='0.0122456'/>
+					<ts:ModuleTime value='0.0122456'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr250D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "52.9" xsi:type="ts:TS_double" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum value = "50.179" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum value = "55.456" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "342" name = "HS Left Sensor Test" startDateTime = "2021-04-02T00:24:47.024"  endDateTime = "2021-04-02T00:24:47.036"  testReferenceID="ID#:iFTOUj6L7EuXDBSu+DhS4D">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='25'/>
+					<ts:TotalTime value='0.0121775'/>
+					<ts:ModuleTime value='0.0121775'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr251D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "53" xsi:type="ts:TS_double" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum value = "50.179" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum value = "55.456" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "343" name = "HS Right Sensor Test" startDateTime = "2021-04-02T00:24:47.041"  endDateTime = "2021-04-02T00:24:47.053"  testReferenceID="ID#:WyP2dWG4mUyCXhu6wF0rwB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='26'/>
+					<ts:TotalTime value='0.0122117'/>
+					<ts:ModuleTime value='0.0122117'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr252D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "53" xsi:type="ts:TS_double" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum value = "50.179" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum value = "55.456" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "344" name = "Get Amp2 Sensor Value" startDateTime = "2021-04-02T00:24:47.058"  endDateTime = "2021-04-02T00:24:47.076"  testReferenceID="ID#:+cEzB3eXu0GAFph0u4nGdD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='27'/>
+					<ts:TotalTime value='0.0180456'/>
+					<ts:ModuleTime value='0.0180456'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr253D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "22.5" xsi:type="ts:TS_double" nonStandardUnit="degrees Celsius" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "0" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "50" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "345" name = "Get Amp Sensor Value" startDateTime = "2021-04-02T00:24:47.081"  endDateTime = "2021-04-02T00:24:47.095"  testReferenceID="ID#:ZeBOXyeCEkK/Q4rhF/s1TC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='28'/>
+					<ts:TotalTime value='0.0130889'/>
+					<ts:ModuleTime value='0.0130889'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr254D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "22.1" xsi:type="ts:TS_double" nonStandardUnit="degrees Celsius" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "0" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "50" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "346" name = "Get Power Supply Sensor Value" startDateTime = "2021-04-02T00:24:47.100"  endDateTime = "2021-04-02T00:24:47.112"  testReferenceID="ID#:XJyw3lUbfk+DGfORDTDmaA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='29'/>
+					<ts:TotalTime value='0.0126151'/>
+					<ts:ModuleTime value='0.0126151'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr255D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "25.4" xsi:type="ts:TS_double" nonStandardUnit="degrees Celsius" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "-50" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "50" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "347" name = "SRAM Page 0 Check" startDateTime = "2021-04-02T00:24:47.123"  endDateTime = "2021-04-02T00:25:35.683"  testReferenceID="ID#:3kcqtTylf0K2d4hJ13c0gD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='31'/>
+					<ts:TotalTime value='48.5602'/>
+					<ts:ModuleTime value='48.5602'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "348" name = "SRAM Page 1 Check" startDateTime = "2021-04-02T00:25:35.692"  endDateTime = "2021-04-02T00:25:36.191"  testReferenceID="ID#:che6FvrUSUa/xqqXpET9gD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='32'/>
+					<ts:TotalTime value='0.498867'/>
+					<ts:ModuleTime value='0.498867'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "349" name = "SRAM Page 2 Check" startDateTime = "2021-04-02T00:25:36.195"  endDateTime = "2021-04-02T00:25:36.609"  testReferenceID="ID#:cNXE9UJMRU6lposNdl02BA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='33'/>
+					<ts:TotalTime value='0.414277'/>
+					<ts:ModuleTime value='0.414277'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "350" name = "SRAM Page 3 Check" startDateTime = "2021-04-02T00:25:36.614"  endDateTime = "2021-04-02T00:25:37.089"  testReferenceID="ID#:YqGUbJEF9EWgJpk574R7qA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='34'/>
+					<ts:TotalTime value='0.474977'/>
+					<ts:ModuleTime value='0.474977'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "351" name = "Power Cycle Unit" startDateTime = "2021-04-02T00:25:37.094"  endDateTime = "2021-04-02T00:26:03.229"  testReferenceID="ID#:FIYuItwZckyYuf6JOYOSVD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='35'/>
+					<ts:TotalTime value='26.1357'/>
+					<ts:ModuleTime value='26.1357'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "352" name = "Battery Backup Test" startDateTime = "2021-04-02T00:26:03.235"  endDateTime = "2021-04-02T00:26:04.491"  testReferenceID="ID#:p4VzON2s6EWvKBxp0H3nLC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='36'/>
+					<ts:TotalTime value='1.2557'/>
+					<ts:ModuleTime value='1.2557'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "353" name = "Block Sensor 0 Check" startDateTime = "2021-04-02T00:26:04.502"  endDateTime = "2021-04-02T00:26:04.515"  testReferenceID="ID#:Sq3nktOnbEmcuPOiOZYrGC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='38'/>
+					<ts:TotalTime value='0.0126534'/>
+					<ts:ModuleTime value='0.0126534'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr256D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "52.85" xsi:type="ts:TS_double" nonStandardUnit="degrees Celsius" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "50.179" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "55.456" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "354" name = "Block Sensor 1 Check" startDateTime = "2021-04-02T00:26:04.520"  endDateTime = "2021-04-02T00:26:04.538"  testReferenceID="ID#:BbHOPCRl5Um67zlPcNi5oB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='39'/>
+					<ts:TotalTime value='0.0171718'/>
+					<ts:ModuleTime value='0.0171718'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr257D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "52.82" xsi:type="ts:TS_double" nonStandardUnit="degrees Celsius" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "50.179" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "55.456" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "355" name = "Block Sensor 2 Check" startDateTime = "2021-04-02T00:26:04.549"  endDateTime = "2021-04-02T00:26:04.562"  testReferenceID="ID#:d2vFO0lGmE+F/QuX5inooA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='40'/>
+					<ts:TotalTime value='0.0130414'/>
+					<ts:ModuleTime value='0.0130414'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr258D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "52.85" xsi:type="ts:TS_double" nonStandardUnit="degrees Celsius" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "50.179" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "55.456" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "356" name = "Block Sensor 3 Check" startDateTime = "2021-04-02T00:26:04.590"  endDateTime = "2021-04-02T00:26:04.601"  testReferenceID="ID#:lGDHqMrBvEe0/XaoG1N5ZC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='41'/>
+					<ts:TotalTime value='0.0107197'/>
+					<ts:ModuleTime value='0.0107197'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr259D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "52.82" xsi:type="ts:TS_double" nonStandardUnit="degrees Celsius" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "50.179" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "55.456" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "357" name = "Block Sensor 4 Check" startDateTime = "2021-04-02T00:26:04.609"  endDateTime = "2021-04-02T00:26:04.620"  testReferenceID="ID#:KtKGZ/k25EWm0Ydfq9zs3D">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='42'/>
+					<ts:TotalTime value='0.0103745'/>
+					<ts:ModuleTime value='0.0103745'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr260D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "52.85" xsi:type="ts:TS_double" nonStandardUnit="degrees Celsius" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "50.179" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "55.456" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "358" name = "Block Sensor 5 Check" startDateTime = "2021-04-02T00:26:04.626"  endDateTime = "2021-04-02T00:26:04.641"  testReferenceID="ID#:3GZetcK/dk6icYqYr6ufRC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='43'/>
+					<ts:TotalTime value='0.0154369'/>
+					<ts:ModuleTime value='0.0154369'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr261D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "52.85" xsi:type="ts:TS_double" nonStandardUnit="degrees Celsius" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "50.179" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "degrees Celsius" value = "55.456" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "359" name = "TE CH0 Posistive Direction Check" startDateTime = "2021-04-02T00:26:04.657"  endDateTime = "2021-04-02T00:26:05.415"  testReferenceID="ID#:wft4dbLGH0OE3xVoyu02CD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='45'/>
+					<ts:TotalTime value='0.757338'/>
+					<ts:ModuleTime value='0.757338'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr262D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.77338963333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "360" name = "TE CH0 Negative Direction Check" startDateTime = "2021-04-02T00:26:05.423"  endDateTime = "2021-04-02T00:26:06.190"  testReferenceID="ID#:LOhQjTzEUESri0TYHJJM5B">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='46'/>
+					<ts:TotalTime value='0.767389'/>
+					<ts:ModuleTime value='0.767389'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr263D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "-10.77247911667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "-11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "-10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "361" name = "TE CH1 Posistive Direction Check" startDateTime = "2021-04-02T00:26:06.202"  endDateTime = "2021-04-02T00:26:06.967"  testReferenceID="ID#:/UGvDafsdEWLjx/wkIcdGD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='47'/>
+					<ts:TotalTime value='0.765118'/>
+					<ts:ModuleTime value='0.765118'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr264D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.76094735" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "362" name = "TE CH1 Negative Direction Check" startDateTime = "2021-04-02T00:26:06.980"  endDateTime = "2021-04-02T00:26:07.755"  testReferenceID="ID#:Dja3YmK9y0WZKpGK9X0dOB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='48'/>
+					<ts:TotalTime value='0.7759'/>
+					<ts:ModuleTime value='0.7759'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr265D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "-10.76484543333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "-11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "-10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "363" name = "TE CH2 Posistive Direction Check" startDateTime = "2021-04-02T00:26:07.768"  endDateTime = "2021-04-02T00:26:08.546"  testReferenceID="ID#:KJVxC0mgxESHhK9gy2wDBD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='49'/>
+					<ts:TotalTime value='0.778063'/>
+					<ts:ModuleTime value='0.778063'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr266D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.91225705" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "364" name = "TE CH2 Negative Direction Check" startDateTime = "2021-04-02T00:26:08.558"  endDateTime = "2021-04-02T00:26:09.351"  testReferenceID="ID#:rm6qR2MdC0+ViheEO+3QWC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='50'/>
+					<ts:TotalTime value='0.7933'/>
+					<ts:ModuleTime value='0.7933'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr267D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "-10.90542856667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "-11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "-10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "365" name = "TE CH3 Posistive Direction Check" startDateTime = "2021-04-02T00:26:09.364"  endDateTime = "2021-04-02T00:26:10.146"  testReferenceID="ID#:wRiEJh5U+Eun0KY+R/t4tC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='51'/>
+					<ts:TotalTime value='0.782292'/>
+					<ts:ModuleTime value='0.782292'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr268D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.91109283333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "366" name = "TE CH3 Negative Direction Check" startDateTime = "2021-04-02T00:26:10.159"  endDateTime = "2021-04-02T00:26:10.965"  testReferenceID="ID#:coDVB3H0dkyDIE9HayPZJB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='52'/>
+					<ts:TotalTime value='0.806332'/>
+					<ts:ModuleTime value='0.806332'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr269D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "-10.91011468333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "-11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "-10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "367" name = "TE CH4 Posistive Direction Check" startDateTime = "2021-04-02T00:26:10.977"  endDateTime = "2021-04-02T00:26:11.740"  testReferenceID="ID#:5MY0Qves/0Smny/+tmcmqA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='53'/>
+					<ts:TotalTime value='0.762511'/>
+					<ts:ModuleTime value='0.762511'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr270D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.75340606667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "368" name = "TE CH4 Negative Direction Check" startDateTime = "2021-04-02T00:26:11.753"  endDateTime = "2021-04-02T00:26:12.510"  testReferenceID="ID#:Y+gR6YcIxU+RqEpITdJ/AB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='54'/>
+					<ts:TotalTime value='0.757488'/>
+					<ts:ModuleTime value='0.757488'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr271D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "-10.7526896" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "-11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "-10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "369" name = "TE CH5 Posistive Direction Check" startDateTime = "2021-04-02T00:26:12.569"  endDateTime = "2021-04-02T00:26:13.361"  testReferenceID="ID#:BaOtgXz+REuaodw2owY5qD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='55'/>
+					<ts:TotalTime value='0.791988'/>
+					<ts:ModuleTime value='0.791988'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr272D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.95545018333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "370" name = "TE CH5 Negative Direction Check" startDateTime = "2021-04-02T00:26:13.371"  endDateTime = "2021-04-02T00:26:14.147"  testReferenceID="ID#:VE/CPzbXEUGoC2cohZLciB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='56'/>
+					<ts:TotalTime value='0.775898'/>
+					<ts:ModuleTime value='0.775898'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr273D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "-10.95565175" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "-11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "-10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "371" name = "TE CH0 4.9A Current Check" startDateTime = "2021-04-02T00:26:14.158"  endDateTime = "2021-04-02T00:26:14.940"  testReferenceID="ID#:HXtev7hBbEqHckdeyDggjC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='57'/>
+					<ts:TotalTime value='0.782214'/>
+					<ts:ModuleTime value='0.782214'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr274D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "4.933152566667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "4.65" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "5.15" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "372" name = "TE CH1 4.9A Current Check" startDateTime = "2021-04-02T00:26:14.952"  endDateTime = "2021-04-02T00:26:15.751"  testReferenceID="ID#:E9ohR7rRd06h1Ub0N5DZyA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='58'/>
+					<ts:TotalTime value='0.798939'/>
+					<ts:ModuleTime value='0.798939'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr275D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "4.962194616667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "4.65" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "5.15" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "373" name = "TE CH2 4.9A Current Check" startDateTime = "2021-04-02T00:26:15.763"  endDateTime = "2021-04-02T00:26:16.546"  testReferenceID="ID#:Y3I5o2JSWECvuZc5LEbuSC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='59'/>
+					<ts:TotalTime value='0.783228'/>
+					<ts:ModuleTime value='0.783228'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr276D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "5.0528662" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "4.65" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "5.15" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "374" name = "TE CH3 4.9A Current Check" startDateTime = "2021-04-02T00:26:16.559"  endDateTime = "2021-04-02T00:26:17.332"  testReferenceID="ID#:cgTfSE0f50qk4vd7/g62eA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='60'/>
+					<ts:TotalTime value='0.772818'/>
+					<ts:ModuleTime value='0.772818'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr277D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "4.989209366667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "4.65" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "5.15" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "375" name = "TE CH4 4.9A Current Check" startDateTime = "2021-04-02T00:26:17.344"  endDateTime = "2021-04-02T00:26:18.117"  testReferenceID="ID#:qZmQ+0ejzUCfnDZbcGD3FD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='61'/>
+					<ts:TotalTime value='0.7725'/>
+					<ts:ModuleTime value='0.7725'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr278D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "4.975672033333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "4.65" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "5.15" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "376" name = "TE CH5 4.9A Current Check" startDateTime = "2021-04-02T00:26:18.129"  endDateTime = "2021-04-02T00:26:18.888"  testReferenceID="ID#:W+O0m6YLCUyKsJZATJ5u7D">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='62'/>
+					<ts:TotalTime value='0.759243'/>
+					<ts:ModuleTime value='0.759243'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr279D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "5.0479945" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "4.65" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "5.15" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "377" name = "TE CH0 1.3A Current Check" startDateTime = "2021-04-02T00:26:18.901"  endDateTime = "2021-04-02T00:26:19.663"  testReferenceID="ID#:zAMmmENuhU6nwXzNCkCpAB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='63'/>
+					<ts:TotalTime value='0.761742'/>
+					<ts:ModuleTime value='0.761742'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr280D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.466629348333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.214" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "378" name = "TE CH1 1.3A Current Check" startDateTime = "2021-04-02T00:26:19.675"  endDateTime = "2021-04-02T00:26:20.429"  testReferenceID="ID#:+mkxle4HCUuueQvr1qk9lA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='64'/>
+					<ts:TotalTime value='0.754363'/>
+					<ts:ModuleTime value='0.754363'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr281D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.477252711667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "379" name = "TE CH2 1.3A Current Check" startDateTime = "2021-04-02T00:26:20.442"  endDateTime = "2021-04-02T00:26:21.251"  testReferenceID="ID#:dQAAUs4UnE2mZArRjriTfB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='65'/>
+					<ts:TotalTime value='0.808836'/>
+					<ts:ModuleTime value='0.808836'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr282D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.53336349" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "380" name = "TE CH3 1.3A Current Check" startDateTime = "2021-04-02T00:26:21.263"  endDateTime = "2021-04-02T00:26:22.052"  testReferenceID="ID#:/oo1b9hIYEyxdUgLN0ylID">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='66'/>
+					<ts:TotalTime value='0.789054'/>
+					<ts:ModuleTime value='0.789054'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr283D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.475835118333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "381" name = "TE CH4 1.3A Current Check" startDateTime = "2021-04-02T00:26:22.064"  endDateTime = "2021-04-02T00:26:28.529"  testReferenceID="ID#:OWUY9JrbL0y0W9igGkvdlC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='67'/>
+					<ts:LoopingProperties>
+						<ts:NumLoops value='8' xsi:type='c:double'/>
+						<ts:NumPassed value='8' xsi:type='c:double'/>
+						<ts:NumFailed value='0' xsi:type='c:double'/>
+						<ts:EndingLoopIndex value='8' xsi:type='c:double'/>
+					</ts:LoopingProperties>
+					<ts:TotalTime value='6.46561'/>
+					<ts:ModuleTime value='6.46561'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr284D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.483021563333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "382" name = "TE CH4 1.3A Current Check (Loop Index:0)"  startDateTime = "2021-04-02T00:26:22.064"  endDateTime = "2021-04-02T00:26:22.836"  testReferenceID="ID#:OWUY9JrbL0y0W9igGkvdlC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='67'/>
+					<ts:LoopingProperties>
+						<ts:LoopIndex value='0' xsi:type='c:double'/>
+					</ts:LoopingProperties>
+					<ts:TotalTime value='0.772115'/>
+					<ts:ModuleTime value='0.772115'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr285D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.481104936667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "383" name = "TE CH4 1.3A Current Check (Loop Index:1)"  startDateTime = "2021-04-02T00:26:22.840"  endDateTime = "2021-04-02T00:26:23.647"  testReferenceID="ID#:OWUY9JrbL0y0W9igGkvdlC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='67'/>
+					<ts:LoopingProperties>
+						<ts:LoopIndex value='1' xsi:type='c:double'/>
+					</ts:LoopingProperties>
+					<ts:TotalTime value='0.806047'/>
+					<ts:ModuleTime value='0.806047'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr286D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.48171746" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "384" name = "TE CH4 1.3A Current Check (Loop Index:2)"  startDateTime = "2021-04-02T00:26:23.650"  endDateTime = "2021-04-02T00:26:24.408"  testReferenceID="ID#:OWUY9JrbL0y0W9igGkvdlC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='67'/>
+					<ts:LoopingProperties>
+						<ts:LoopIndex value='2' xsi:type='c:double'/>
+					</ts:LoopingProperties>
+					<ts:TotalTime value='0.757556'/>
+					<ts:ModuleTime value='0.757556'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr287D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.49027011" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "385" name = "TE CH4 1.3A Current Check (Loop Index:3)"  startDateTime = "2021-04-02T00:26:24.412"  endDateTime = "2021-04-02T00:26:25.207"  testReferenceID="ID#:OWUY9JrbL0y0W9igGkvdlC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='67'/>
+					<ts:LoopingProperties>
+						<ts:LoopIndex value='3' xsi:type='c:double'/>
+					</ts:LoopingProperties>
+					<ts:TotalTime value='0.794857'/>
+					<ts:ModuleTime value='0.794857'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr288D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.481163163333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "386" name = "TE CH4 1.3A Current Check (Loop Index:4)"  startDateTime = "2021-04-02T00:26:25.211"  endDateTime = "2021-04-02T00:26:26.046"  testReferenceID="ID#:OWUY9JrbL0y0W9igGkvdlC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='67'/>
+					<ts:LoopingProperties>
+						<ts:LoopIndex value='4' xsi:type='c:double'/>
+					</ts:LoopingProperties>
+					<ts:TotalTime value='0.835326'/>
+					<ts:ModuleTime value='0.835326'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr289D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.481556211667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "387" name = "TE CH4 1.3A Current Check (Loop Index:5)"  startDateTime = "2021-04-02T00:26:26.050"  endDateTime = "2021-04-02T00:26:26.880"  testReferenceID="ID#:OWUY9JrbL0y0W9igGkvdlC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='67'/>
+					<ts:LoopingProperties>
+						<ts:LoopIndex value='5' xsi:type='c:double'/>
+					</ts:LoopingProperties>
+					<ts:TotalTime value='0.829471'/>
+					<ts:ModuleTime value='0.829471'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr290D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.480810505" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "388" name = "TE CH4 1.3A Current Check (Loop Index:6)"  startDateTime = "2021-04-02T00:26:26.884"  endDateTime = "2021-04-02T00:26:27.699"  testReferenceID="ID#:OWUY9JrbL0y0W9igGkvdlC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='67'/>
+					<ts:LoopingProperties>
+						<ts:LoopIndex value='6' xsi:type='c:double'/>
+					</ts:LoopingProperties>
+					<ts:TotalTime value='0.814898'/>
+					<ts:ModuleTime value='0.814898'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr291D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.48504" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "389" name = "TE CH4 1.3A Current Check (Loop Index:7)"  startDateTime = "2021-04-02T00:26:27.703"  endDateTime = "2021-04-02T00:26:28.529"  testReferenceID="ID#:OWUY9JrbL0y0W9igGkvdlC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='67'/>
+					<ts:LoopingProperties>
+						<ts:LoopIndex value='7' xsi:type='c:double'/>
+					</ts:LoopingProperties>
+					<ts:TotalTime value='0.826211'/>
+					<ts:ModuleTime value='0.826211'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr292D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.483021563333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "390" name = "TE CH5 1.3A Current Check" startDateTime = "2021-04-02T00:26:28.541"  endDateTime = "2021-04-02T00:26:29.301"  testReferenceID="ID#:R0Ef4Ih3eUiMFNQqMTjZUA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='68'/>
+					<ts:LoopingProperties>
+						<ts:NumLoops value='1' xsi:type='c:double'/>
+						<ts:NumPassed value='1' xsi:type='c:double'/>
+						<ts:NumFailed value='0' xsi:type='c:double'/>
+						<ts:EndingLoopIndex value='1' xsi:type='c:double'/>
+					</ts:LoopingProperties>
+					<ts:TotalTime value='0.759484'/>
+					<ts:ModuleTime value='0.759484'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr293D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "1.524723131667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.314" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "1.64" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "391" name = "Heartbeat Led Test" startDateTime = "2021-04-02T00:26:29.314"  endDateTime = "2021-04-02T00:26:53.493"  testReferenceID="ID#:EyKgFGEY0kqT47pLtUVfGB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='69'/>
+					<ts:TotalTime value='24.1796'/>
+					<ts:ModuleTime value='24.1796'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "392" name = "External Led Blinking Test" startDateTime = "2021-04-02T00:26:53.500"  endDateTime = "2021-04-02T00:26:53.668"  testReferenceID="ID#:+qhaouIhzUSi4J9NjcFEqB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='70'/>
+					<ts:TotalTime value='0.168081'/>
+					<ts:ModuleTime value='0.168081'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "393" name = "Low Lid 1 Voltage Check" startDateTime = "2021-04-02T00:26:53.690"  endDateTime = "2021-04-02T00:26:54.459"  testReferenceID="ID#:fVk977wyHUOWQIPid4rfrB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='72'/>
+					<ts:TotalTime value='0.768829'/>
+					<ts:ModuleTime value='0.768829'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr294D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "19.5647721" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "18.7435" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "20.7165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "394" name = "Low Lid 2 Voltage Check" startDateTime = "2021-04-02T00:26:54.472"  endDateTime = "2021-04-02T00:26:55.259"  testReferenceID="ID#:H0kPcLeDmEypF9qrc47cCD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='73'/>
+					<ts:TotalTime value='0.787402'/>
+					<ts:ModuleTime value='0.787402'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr295D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "19.6149207" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "18.7435" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "20.7165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "395" name = "Hi Lid 1 Voltage Check" startDateTime = "2021-04-02T00:26:55.271"  endDateTime = "2021-04-02T00:26:56.058"  testReferenceID="ID#:Kk4NQpJUCECGblV0OdhKVB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='74'/>
+					<ts:TotalTime value='0.78635'/>
+					<ts:ModuleTime value='0.78635'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr296D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "34.002974" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "32.585" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "36.015" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "396" name = "Hi Lid 2 Voltage Check" startDateTime = "2021-04-02T00:26:56.071"  endDateTime = "2021-04-02T00:26:56.855"  testReferenceID="ID#:MnCzhIui3U2w2Fy2/4Z6cD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='75'/>
+					<ts:TotalTime value='0.784468'/>
+					<ts:ModuleTime value='0.784468'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr297D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "34.0941681" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "32.585" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "36.015" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "397" name = "Fan 1 Low Speed Check" startDateTime = "2021-04-02T00:26:56.908"  endDateTime = "2021-04-02T00:27:02.923"  testReferenceID="ID#:hGUIrpOepkadnsvGtzvEvB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='77'/>
+					<ts:TotalTime value='6.01551'/>
+					<ts:ModuleTime value='6.01551'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr298D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "241" xsi:type="ts:TS_double" nonStandardUnit="R.P.M" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "R.P.M" value = "200" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "R.P.M" value = "299" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "398" name = "Fan 2 Low Speed Check" startDateTime = "2021-04-02T00:27:02.937"  endDateTime = "2021-04-02T00:27:08.954"  testReferenceID="ID#:J+6Bk150m0uQK3EcNwZZOA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='78'/>
+					<ts:TotalTime value='6.01759'/>
+					<ts:ModuleTime value='6.01759'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr299D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "236" xsi:type="ts:TS_double" nonStandardUnit="R.P.M" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "R.P.M" value = "200" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "R.P.M" value = "299" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "399" name = "Fan 1 Medium Speed Check" startDateTime = "2021-04-02T00:27:08.968"  endDateTime = "2021-04-02T00:27:14.984"  testReferenceID="ID#:INxiJIvKOE+nZv2U4fXukD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='79'/>
+					<ts:TotalTime value='6.01587'/>
+					<ts:ModuleTime value='6.01587'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr300D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "360" xsi:type="ts:TS_double" nonStandardUnit="RPM" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "RPM" value = "300" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "RPM" value = "380" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "400" name = "Fan 2 Medium Speed Check" startDateTime = "2021-04-02T00:27:14.997"  endDateTime = "2021-04-02T00:27:21.014"  testReferenceID="ID#:UodXYDKwr02HGJwlhCMtnD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='80'/>
+					<ts:TotalTime value='6.01669'/>
+					<ts:ModuleTime value='6.01669'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr301D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "354" xsi:type="ts:TS_double" nonStandardUnit="RPM" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "RPM" value = "300" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "RPM" value = "380" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "401" name = "Fan 1 Hi Speed Check" startDateTime = "2021-04-02T00:27:21.027"  endDateTime = "2021-04-02T00:27:27.045"  testReferenceID="ID#:B/WFyM9y60KjkQEbbA97WA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='81'/>
+					<ts:TotalTime value='6.01803'/>
+					<ts:ModuleTime value='6.01803'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr302D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "470" xsi:type="ts:TS_double" nonStandardUnit="RPM" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "RPM" value = "380" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "RPM" value = "500" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "402" name = "Fan 2 Hi Speed Check" startDateTime = "2021-04-02T00:27:27.059"  endDateTime = "2021-04-02T00:27:33.075"  testReferenceID="ID#:Wl7hUYmQ/kCMSrIckmlBdD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='82'/>
+					<ts:TotalTime value='6.01593'/>
+					<ts:ModuleTime value='6.01593'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr303D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "464" xsi:type="ts:TS_double" nonStandardUnit="RPM" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "RPM" value = "380" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "RPM" value = "500" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "403" name = "RT Lid Voltage Check" startDateTime = "2021-04-02T00:27:33.125"  endDateTime = "2021-04-02T00:27:33.857"  testReferenceID="ID#:PJJXVEbWFEa13k+DySJgaC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='84'/>
+					<ts:TotalTime value='0.732225'/>
+					<ts:ModuleTime value='0.732225'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr304D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "39.89" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "38" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "42" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "404" name = "Beep Check" startDateTime = "2021-04-02T00:27:33.901"  endDateTime = "2021-04-02T00:27:43.040"  testReferenceID="ID#:EqzyXG3DBkyWUZnL9CfwwA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='86'/>
+					<ts:TotalTime value='9.13912'/>
+					<ts:ModuleTime value='9.13912'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:SessionAction ID = "405" name = "Load All Load 1 Min" startDateTime = "2021-04-02T00:27:43.063"  endDateTime = "2021-04-02T00:28:44.105"  testReferenceID="ID#:lpso/9wtqUaXEmf9sr7MWA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='87'/>
+					<ts:TotalTime value='61.0426'/>
+					<ts:ModuleTime value='61.0426'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "406" name = "12.8V Load 30W" startDateTime = "2021-04-02T00:28:44.134"  endDateTime = "2021-04-02T00:28:45.316"  testReferenceID="ID#:bL07cwx0MEuslFkQRPVE3C">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='88'/>
+					<ts:TotalTime value='1.18195'/>
+					<ts:ModuleTime value='1.18195'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr305D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "12.5984655" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "12.16" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "13.44" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "407" name = "5V 600mA Load" startDateTime = "2021-04-02T00:28:45.329"  endDateTime = "2021-04-02T00:28:46.816"  testReferenceID="ID#:JuBFW+012kqlhm5xYV+AQD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='89'/>
+					<ts:TotalTime value='1.48677'/>
+					<ts:ModuleTime value='1.48677'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr306D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "5.05017052" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "4.75" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "5.25" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "408" name = "TE CH0 10.5A Current Check" startDateTime = "2021-04-02T00:28:46.830"  endDateTime = "2021-04-02T00:28:47.588"  testReferenceID="ID#:pNI7DpsMY0yXDt+MhjQC2C">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='90'/>
+					<ts:TotalTime value='0.758296'/>
+					<ts:ModuleTime value='0.758296'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr307D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.77881198333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "409" name = "TE CH1 10.5A Current Check" startDateTime = "2021-04-02T00:28:47.601"  endDateTime = "2021-04-02T00:28:48.376"  testReferenceID="ID#:kPT6D26WDkiAnuv0hwrpkD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='91'/>
+					<ts:TotalTime value='0.77559'/>
+					<ts:ModuleTime value='0.77559'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr308D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.76699566667" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "410" name = "TE CH2 10.5A Current Check" startDateTime = "2021-04-02T00:28:48.389"  endDateTime = "2021-04-02T00:28:49.144"  testReferenceID="ID#:fWmorY1ie0qBEWbqoC41EC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='92'/>
+					<ts:TotalTime value='0.754906'/>
+					<ts:ModuleTime value='0.754906'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr309D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.91300598333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "411" name = "TE CH3 10.5A Current Check" startDateTime = "2021-04-02T00:28:49.148"  endDateTime = "2021-04-02T00:28:49.904"  testReferenceID="ID#:VL9oMFcI1U2qOiu+O/DxOB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='93'/>
+					<ts:TotalTime value='0.756222'/>
+					<ts:ModuleTime value='0.756222'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr310D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.91983753333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "412" name = "TE CH4 10.5A Current Check" startDateTime = "2021-04-02T00:28:49.917"  endDateTime = "2021-04-02T00:28:50.691"  testReferenceID="ID#:kyCRkKaUE0G0AdwgW2iu5A">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='94'/>
+					<ts:TotalTime value='0.773628'/>
+					<ts:ModuleTime value='0.773628'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr311D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.76815473333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "413" name = "TE CH5 10.5A Current Check" startDateTime = "2021-04-02T00:28:50.702"  endDateTime = "2021-04-02T00:28:51.466"  testReferenceID="ID#:kQP4ME5NuEu3Titg5yMjeC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='95'/>
+					<ts:TotalTime value='0.763609'/>
+					<ts:ModuleTime value='0.763609'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr312D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "10.96417273333" xsi:type="ts:TS_double" nonStandardUnit="ampere" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "ampere" value = "10.165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "ampere" value = "11.235" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "414" name = "Low Lid 1 Voltage Check" startDateTime = "2021-04-02T00:28:51.474"  endDateTime = "2021-04-02T00:28:52.253"  testReferenceID="ID#:XyvbZrjmmE2GS7uXBrkYDA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='96'/>
+					<ts:TotalTime value='0.779124'/>
+					<ts:ModuleTime value='0.779124'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr313D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "19.5672272" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "18.7435" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "20.7165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "415" name = "Low Lid 2 Voltage Check" startDateTime = "2021-04-02T00:28:52.257"  endDateTime = "2021-04-02T00:28:53.027"  testReferenceID="ID#:5oho99YAAkKJEgYduWK1TD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='97'/>
+					<ts:TotalTime value='0.770169'/>
+					<ts:ModuleTime value='0.770169'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr314D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "19.615551" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "18.7435" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "20.7165" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "416" name = "Hi Lid 1 Voltage Check" startDateTime = "2021-04-02T00:28:53.040"  endDateTime = "2021-04-02T00:28:53.815"  testReferenceID="ID#:gdWzxdWVRk+7KKdqdLY60A">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='98'/>
+					<ts:TotalTime value='0.775443'/>
+					<ts:ModuleTime value='0.775443'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr315D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "34.0074482" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "32.585" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "36.015" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:Test ID = "417" name = "Hi Lid 2 Voltage Check" startDateTime = "2021-04-02T00:28:53.828"  endDateTime = "2021-04-02T00:28:54.630"  testReferenceID="ID#:Q15tZPkZr0CugWTEKKsaCB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NumericLimitTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='99'/>
+					<ts:TotalTime value='0.801546'/>
+					<ts:ModuleTime value='0.801546'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+			<tr:TestResult ID = "tr316D0402T0135Z600" name = "Numeric">
+				<tr:TestData>
+					<c:Datum value = "34.0943912" xsi:type="ts:TS_double" nonStandardUnit="volt" flags = "0x2400"/>
+				</tr:TestData>
+				<tr:TestLimits>
+					<tr:Limits>
+						<c:LimitPair operator = "AND">
+							<c:Limit comparator = "GE">
+								<c:Datum nonStandardUnit = "volt" value = "32.585" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+							<c:Limit comparator = "LE">
+								<c:Datum nonStandardUnit = "volt" value = "36.015" xsi:type="ts:TS_double" flags = "0x0000"/>
+							</c:Limit>
+						</c:LimitPair>
+					</tr:Limits>
+				</tr:TestLimits>
+			</tr:TestResult>
+		</tr:Test>
+		<tr:SessionAction ID = "418" name = "Unoad All Load" startDateTime = "2021-04-02T00:28:54.642"  endDateTime = "2021-04-02T00:28:56.692"  testReferenceID="ID#:lNo269sh5EGs4Lbws/hkUA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='100'/>
+					<ts:TotalTime value='2.05003'/>
+					<ts:ModuleTime value='2.05003'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:Test ID = "419" name = "Satelite Display and Keypad Check" startDateTime = "2021-04-02T00:28:56.742"  endDateTime = "2021-04-02T00:29:36.266"  testReferenceID="ID#:qFQZ2SAKR0OvejZsPSBDzD">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='102'/>
+					<ts:TotalTime value='39.5244'/>
+					<ts:ModuleTime value='39.5244'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "420" name = "Protocol Creation Check" startDateTime = "2021-04-02T00:29:36.284"  endDateTime = "2021-04-02T00:29:39.795"  testReferenceID="ID#:kdiQkBMZ9kWTLfqUqQZfzB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='103'/>
+					<ts:TotalTime value='3.51072'/>
+					<ts:ModuleTime value='3.51072'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "421" name = "Protocol Delete Check" startDateTime = "2021-04-02T00:29:39.799"  endDateTime = "2021-04-02T00:29:41.043"  testReferenceID="ID#:/dELZBxRiUyfgYpnbQmdzB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='104'/>
+					<ts:TotalTime value='1.2448'/>
+					<ts:ModuleTime value='1.2448'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "422" name = "Remote Command Set" startDateTime = "2021-04-02T00:29:41.053"  endDateTime = "2021-04-02T00:30:42.612"  testReferenceID="ID#:/sf35Wk+CEeV02sYnp9QgA">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='105'/>
+					<ts:TotalTime value='61.559'/>
+					<ts:ModuleTime value='61.559'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:Test ID = "423" name = "Initialize SRAM and HC12" startDateTime = "2021-04-02T00:30:42.626"  endDateTime = "2021-04-02T00:30:52.114"  testReferenceID="ID#:KSTbIXibA0WJCfcONXYX0D">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>PassFailTest</ts:StepType>
+					<ts:StepGroup>Main</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='106'/>
+					<ts:TotalTime value='9.48788'/>
+					<ts:ModuleTime value='9.48788'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:Outcome value = "Passed" />
+		</tr:Test>
+		<tr:SessionAction ID = "424" name = "Power Off" startDateTime = "2021-04-02T00:30:52.172"  endDateTime = "2021-04-02T00:30:52.240"  testReferenceID="ID#:+HcHQC/MrEW6zKqBfNUvNB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Cleanup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='0'/>
+					<ts:TotalTime value='0.0679151'/>
+					<ts:ModuleTime value='0.0679151'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "425" name = "DC Power Off" startDateTime = "2021-04-02T00:30:52.248"  endDateTime = "2021-04-02T00:30:52.585"  testReferenceID="ID#:uHxAHNpOc02A2ZVKR0dFLB">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>Action</ts:StepType>
+					<ts:StepGroup>Cleanup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='1'/>
+					<ts:TotalTime value='0.337177'/>
+					<ts:ModuleTime value='0.337177'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+		<tr:SessionAction ID = "426" name = "Wait 10" startDateTime = "2021-04-02T00:30:52.595"  endDateTime = "2021-04-02T00:31:07.595"  testReferenceID="ID#:vYX24mrHDEm0g32FqlewxC">
+			<tr:Extension>
+				<ts:TSStepProperties>
+					<ts:StepType>NI_Wait</ts:StepType>
+					<ts:StepGroup>Cleanup</ts:StepGroup>
+					<ts:BlockLevel value='0'/>
+					<ts:Index value='2'/>
+					<ts:TotalTime value='15.0004'/>
+				</ts:TSStepProperties>
+			</tr:Extension>
+			<tr:ActionOutcome value = "Done" />
+		</tr:SessionAction>
+	</tr:ResultSet>
+	<tr:TestProgram>
+		<c:SerialNumber>
+			CFTP7
+		</c:SerialNumber>
+		<tr:Configuration>
+			<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+				<c:Item name = "IncludeTSExtensionElements">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeAttributes">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeLimits">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeMeasurements">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeArrayMeasurement">
+					<c:Datum value = "2" xsi:type="ts:TS_double" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ArrayMeasurementFilter">
+					<c:Datum value = "3" xsi:type="ts:TS_double" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ArrayMeasurementMax">
+					<c:Datum value = "100" xsi:type="ts:TS_double" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeTimes">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "Format">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>xml</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "NumericFormat">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>%$.13g</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "ResultFilterExpression">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>True</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "GeneratePath">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "UseTemporaryFile">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "UseSequenceFileNameAsPrefix">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "AddTimeAndDateToFileName">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "NewFileNameForEachUUT">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ForceFileNameToBeUnique">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "AppendToFileIfItExists">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "DirectoryType">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>SpecifyByExpression</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "Directory">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "BaseName">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>Report</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "UseFormatForExtension">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "Extension">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "ReportFilePath">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "DisableReportGeneration">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeStepResults">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "BodyGenerator">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>DLL</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "Colors">
+					<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+						<c:Item name = "LabelBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FFFFFF</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "ValueBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#32FFFF</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "UUTSeparator">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#0000E0</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "HeaderSeparator">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#8000CC</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "TableBorder">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#000000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "MainBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#00C4C4</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "SetupBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF8000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "CleanupBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#ADD8E6</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "ReportTextBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF32CC</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Terminated">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#000080</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Failed">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF0000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Error">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF0000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Passed">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#008000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Skipped">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#B98028</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Done">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#008000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "Running">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FFCC33</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "TerminatedBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#0000FF</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "FailedBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF0000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "ErrorBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF0000</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "PassedBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#00FF00</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "SkippedBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FFFF00</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "DoneBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#00FFCC</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "RunningBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FFCC33</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "FailureStackLabelBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#FF2020</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "FailureStackValueBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#D0D0D0</c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "BatchHeadingBg">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value>#00C4C4</c:Value>
+							</c:Datum>
+						</c:Item>
+					</c:Collection>
+				</c:Item>
+				<c:Item name = "DateAndTimeFormat">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>TimeFirst</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "NewFileNameForEachBatch">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "NewBatchFileNameForEachBatch">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "NewFileNameForEachTestSocket">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "StoreUUTReportWithBatchReport">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "BatchBaseName">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>BatchReport</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "LabelSize">
+					<c:Datum value = "26" xsi:type="ts:TS_double" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "RelStylesheetPath">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>tr5_horizontal.xsl</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "StylesheetPath">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>C:\Program Files\National Instruments\TestStand 2012\Components\Models\TestStandModels\ATML\StyleSheets\tr5_horizontal.xsl</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "StylesheetMRU">
+					<c:IndexedArray dimensions="[5]" lowerBounds="[0]" upperBounds="[4]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+						<ts:Element position ="[0]">
+							<c:Value>horizontal.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[1]">
+							<c:Value>report.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[2]">
+							<c:Value>expand.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[3]">
+							<c:Value></c:Value>
+						</ts:Element>
+						<ts:Element position ="[4]">
+							<c:Value></c:Value>
+						</ts:Element>
+					</c:IndexedArray>
+				</c:Item>
+				<c:Item name = "ATMLStylesheetMRU">
+					<c:IndexedArray dimensions="[3]" lowerBounds="[0]" upperBounds="[2]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+						<ts:Element position ="[0]">
+							<c:Value>TR_horizontal.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[1]">
+							<c:Value>trml.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[2]">
+							<c:Value></c:Value>
+						</ts:Element>
+					</c:IndexedArray>
+				</c:Item>
+				<c:Item name = "StoreStylesheetAbsolutePath">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ProcessOnTheFly">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "PurgeOnTheFlyResults">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "IncludeStepResultComments">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "UseLocalizedDecimalPoint">
+					<c:Datum value = "false" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ReportStyle">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value>ATML5</c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "ReportFileSequentialModelExpression">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value><![CDATA["<ClientFileDir>\\TestReport_<ClientFileName>\\<ClientFileName>_Report[<UUT>][<FileTime>][<FileDate>][<UUTStatus>]<Unique>.<FileExtension>"]]></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "ReportFileParallelModelExpression">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value><![CDATA["<ClientFileDir>\\<ClientFileName>_Report[<FileTime>][<FileDate>]<Unique>.<FileExtension>"]]></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "ReportFileBatchModelExpression">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value><![CDATA["<ClientFileDir>\\<ClientFileName>_BatchReport[<FileTime>][<FileDate>]<Unique>.<FileExtension>"]]></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "BatchFileBatchModelExpression">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value><![CDATA["<ClientFileDir>\\<ClientFileName>_BatchReport[<FileTime>][<FileDate>]<Unique>.<FileExtension>"]]></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "NewFileNameForEachUUTStatus">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ReportPathMacroListString">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value><![CDATA[<CLIENTFILEDIR><CLIENTFILENAME><CLIENTFILENAME><UUT><FILETIME><FILEDATE><UUTSTATUS><UNIQUE><FILEEXTENSION>]]></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "BatchReportPathMacroListString">
+					<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+						<c:Value></c:Value>
+					</c:Datum>
+				</c:Item>
+				<c:Item name = "CheckIfMacroListIsUnchanged">
+					<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+				</c:Item>
+				<c:Item name = "ATML5StylesheetMRU">
+					<c:IndexedArray dimensions="[3]" lowerBounds="[0]" upperBounds="[2]" xsi:type="ts:TS_stringArray" flags = "0x0000">
+						<ts:Element position ="[0]">
+							<c:Value>tr5_horizontal.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[1]">
+							<c:Value>tr5_report.xsl</c:Value>
+						</ts:Element>
+						<ts:Element position ="[2]">
+							<c:Value>tr5_expand.xsl</c:Value>
+						</ts:Element>
+					</c:IndexedArray>
+				</c:Item>
+				<c:Item name = "Atml_Rpt_Options">
+					<c:Collection xsi:type="ts:TS_Collection" flags = "0x0000">
+						<c:Item name = "AddReportText">
+							<c:Datum value = "true" xsi:type="ts:TS_boolean" flags = "0x0000"/>
+						</c:Item>
+						<c:Item name = "ExtensionDLLAbsolutePath">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value></c:Value>
+							</c:Datum>
+						</c:Item>
+						<c:Item name = "TestResultsSchemaPath">
+							<c:Datum xsi:type="ts:TS_string" flags = "0x0000">
+								<c:Value></c:Value>
+							</c:Datum>
+						</c:Item>
+					</c:Collection>
+				</c:Item>
+			</c:Collection>
+		</tr:Configuration>
+	</tr:TestProgram>
+	<tr:TestStation>
+		<c:SerialNumber>CFTP7</c:SerialNumber>
+	</tr:TestStation>
+	<tr:UUT>
+		<c:SerialNumber>10041194-RA21110689</c:SerialNumber>
+	</tr:UUT>
+	<tr:Extension>
+		<ts:TSResultSetProperties>
+			<ts:NumOfResults value = '105'/>
+		</ts:TSResultSetProperties>
+	</tr:Extension>
+</trc:TestResults>
+</trc:TestResultsCollection>
